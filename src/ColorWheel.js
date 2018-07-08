@@ -1,6 +1,6 @@
 'use strict';
 
-window.ColorWheel = (function () {
+import { version } from '../package.json'
 
 const
 FULL_ARC = Math.PI * 2,
@@ -13,6 +13,7 @@ SIN_60   = SQRT_3 / 2,
 
 SATURATION_GRADIENT_Y_MULTIPLIER = SQRT_3 / 4;
 
+
 function range1 (number) {
 	return Math.max(0, Math.min(number, 1));
 }
@@ -22,7 +23,8 @@ function range360 (deg) {
 	return deg;
 }
 
-function ColorWheel (callback, size = 256) {
+
+export default function ColorWheel (callback, size = 256) {
 	const
 	background = document.createElement('canvas').getContext('2d'),
 	triangle   = document.createElement('canvas').getContext('2d'),
@@ -382,8 +384,4 @@ function ColorWheel (callback, size = 256) {
 	this.setSize(size);
 }
 
-ColorWheel.version = '1.0.1';
-
-return ColorWheel;
-
-})();
+ColorWheel.version = version;

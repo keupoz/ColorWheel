@@ -1,0 +1,46 @@
+{
+  "name": "colorwheel",
+  "version": "1.0.1",
+  "description": "Simple HSV color wheel for web pages",
+  "main": "build/ColorWheel.js",
+  "jsnext:main": "build/ColorWheel.module.js",
+  "module": "build/ColorWheel.module.js",
+  "files": [
+    "README.md",
+    "LICENSE",
+    "package.json",
+    "build",
+    "src",
+    "demo",
+    "index.html"
+  ],
+  "scripts": {
+    "build": "rollup -c && uglifyjs build/ColorWheel.js -o build/ColorWheel.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niteru/ColorWheel.git"
+  },
+  "keywords": [
+    "hsv",
+    "hsl",
+    "color",
+    "wheel",
+    "picker",
+    "html"
+  ],
+  "author": "Niteru",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/niteru/ColorWheel/issues"
+  },
+  "homepage": "https://github.com/niteru/ColorWheel#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "rollup": "^0.62.0",
+    "rollup-plugin-babel": "^3.0.7",
+    "rollup-plugin-json": "^3.0.0",
+    "uglify-js": "^3.4.3"
+  }
+}

@@ -2,8 +2,19 @@
 
 This is the simple HSV color wheel with touch support. Works on Canvas API
 
-## Installation
-Download and include the script file via `script` tag. Then initialize a picker:
+## Usage
+ColorWheel is a UMD module, so you can include it via `script` tag or `require` statement. Also it can be imported as an ES module (use `ColorWheel.module.js`)
+
+```html
+<script src="ColorWheel.min.js"></script>
+```
+
+```javascript
+import ColorWheel from './ColorWheel.module.js'
+// or
+const ColorWheel = require('./ColorWheel.js');
+```
+
 ```javascript
 let picker = new ColorWheel(function (eventState, eventName) {
     // Do something here when color is changed
