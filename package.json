@@ -15,7 +15,8 @@
     "index.html"
   ],
   "scripts": {
-    "build": "rollup -c && uglifyjs build/ColorWheel.js -o build/ColorWheel.min.js -cm"
+    "build": "rollup -c && uglifyjs build/ColorWheel.js -o build/ColorWheel.min.js -cm",
+    "dev": "rollup -cw"
   },
   "repository": {
     "type": "git",
