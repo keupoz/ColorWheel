@@ -6,13 +6,9 @@
   "jsnext:main": "build/ColorWheel.module.js",
   "module": "build/ColorWheel.module.js",
   "files": [
-    "README.md",
     "LICENSE",
     "package.json",
-    "build",
-    "src",
-    "demo",
-    "index.html"
+    "build"
   ],
   "scripts": {
     "build": "rollup -c && uglifyjs build/ColorWheel.js -o build/ColorWheel.min.js -cm",
