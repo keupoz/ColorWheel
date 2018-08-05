@@ -299,7 +299,7 @@ export default function ColorWheel (callback, size = 256) {
 		
 		saturation *= lightness < 0.5 ? lightness : 1 - lightness;
 		
-		CurrentHue        = self.HSV[0] = CurrentHue;
+		CurrentHue        = self.HSV[0] = self.HSL[0];
 		CurrentBrightness = self.HSV[2] = lightness + saturation;
 		CurrentSaturation = self.HSV[1] = 2 * saturation / CurrentBrightness;
 	}
