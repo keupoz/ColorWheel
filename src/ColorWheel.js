@@ -345,9 +345,9 @@ export default function ColorWheel (callback, size = 256) {
 	};
 	
 	this.setHSV = function (h,s,v) {
-		CurrentHue        = Math.round(range360(h));
-		CurrentSaturation = range1(s);
-		CurrentBrightness = range1(v);
+		CurrentHue        = this.HSV[0] = Math.round(range360(h));
+		CurrentSaturation = this.HSV[1] = range1(s);
+		CurrentBrightness = this.HSV[2] = range1(v);
 		
 		hueRad = CurrentHue * DEGREE;
 		

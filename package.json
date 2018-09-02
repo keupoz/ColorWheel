@@ -1,6 +1,6 @@
 {
   "name": "colorwheel",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simple HSV color wheel for web pages",
   "main": "build/ColorWheel.js",
   "jsnext:main": "build/ColorWheel.module.js",
