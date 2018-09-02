@@ -14,10 +14,6 @@
     "build": "rollup -c && uglifyjs build/ColorWheel.js -o build/ColorWheel.min.js -cm",
     "dev": "rollup -cw"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/niteru/ColorWheel.git"
-  },
   "keywords": [
     "hsv",
     "hsl",
@@ -26,12 +22,7 @@
     "picker",
     "html"
   ],
-  "author": "Niteru",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/niteru/ColorWheel/issues"
-  },
-  "homepage": "https://github.com/niteru/ColorWheel#readme",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
@@ -39,5 +30,14 @@
     "rollup-plugin-babel": "^3.0.7",
     "rollup-plugin-json": "^3.0.0",
     "uglify-js": "^3.4.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keupoz/ColorWheel.git"
+  },
+  "author": "keupoz",
+  "bugs": {
+    "url": "https://github.com/keupoz/ColorWheel/issues"
+  },
+  "homepage": "https://github.com/keupoz/ColorWheel#readme"
 }
