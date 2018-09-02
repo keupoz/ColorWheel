@@ -1,4 +1,4 @@
-import babel from 'rollup-plugin-babel'
+import buble from 'rollup-plugin-buble'
 import json from 'rollup-plugin-json'
 
 export default {
@@ -14,8 +14,5 @@ export default {
 			file: 'build/ColorWheel.module.js'
 		}
 	],
-	plugins: [
-		json(),
-		babel()
-	]
+	plugins: [ json(), buble() ]
 }
